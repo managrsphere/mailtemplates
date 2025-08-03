@@ -1,0 +1,7 @@
+{
+    "2fa": "twofactor.html",
+    "invoice": "invoice.html",
+    "newaccount": "newaccount.html",
+    "newclient": "newclient.html",
+    "passwordrecovery": "passwordrecovery.html",
+}

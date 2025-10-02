@@ -3,5 +3,6 @@
     "invoice": "invoice.html",
     "newaccount": "newaccount.html",
     "newclient": "newclient.html",
-    "passwordrecovery": "passwordrecovery.html"
+    "passwordrecovery": "passwordrecovery.html",
+    "error": "error.html"
 }

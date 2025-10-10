@@ -4,5 +4,11 @@
     "newaccount": "newaccount.html",
     "newclient": "newclient.html",
     "passwordrecovery": "passwordrecovery.html",
-    "error": "error.html"
+    "error": "error.html",
+    "pm_2fa": "pm_twofactor.html",
+    "pm_invoice": "pm_invoice.html",
+    "pm_newaccount": "pm_newaccount.html",
+    "pm_newclient": "pm_newclient.html",
+    "pm_passwordrecovery": "pm_passwordrecovery.html",
+    "pm_error": "pm_error.html"
 }

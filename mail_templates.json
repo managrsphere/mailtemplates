@@ -5,6 +5,7 @@
     "newclient": "newclient.html",
     "passwordrecovery": "passwordrecovery.html",
     "error": "error.html",
+    "shift-offer": "shift-offer.html",
     "pm_2fa": "pm_twofactor.html",
     "pm_invoice": "pm_invoice.html",
     "pm_newaccount": "pm_newaccount.html",

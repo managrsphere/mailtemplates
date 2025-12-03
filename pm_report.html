@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <title>Neue Meldung</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.5;
+            background-color: #f9f9f9;
+            color: #333333;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+
+        .header {
+            background: linear-gradient(135deg,#7b2cbf 0%,#a96ae0 100%);
+            padding: 25px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .section {
+            padding: 25px 20px;
+            background: #f8f2ff;
+            border-left: 4px solid #7b2cbf;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+
+        .field {
+            margin: 10px 0;
+            color: #444444;
+        }
+        .field[data-label]:not(:empty)::before {
+            content: attr(data-label) ": ";
+            font-weight: 600;
+        }
+        .field:empty { display: none; }
+        .field span:empty { display: none; }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #f6f0fc;
+            font-size: 14px;
+            color: #777777;
+        }
+
+        a {
+            color: #7b2cbf;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://api.shiftmanagr.com/files/public/logo.png" alt="Logo" width="120" style="margin-bottom: 15px;" />
+            <h2 style="margin: 0;">Neue Meldung</h2>
+            <p style="margin: 8px 0 0; font-size: 14px;">Eine neue Meldung wurde erstellt.</p>
+        </div>
+
+        <!-- Main Content -->
+        <div style="padding: 25px 20px;">
+
+            <!-- General fields -->
+            <div class="section">
+                <p class="field" data-label="Bad"><span>[department]</span></p>
+                <p class="field" data-label="Art"><span>[type]</span></p>
+                <p class="field" data-label="Typ der Verletzung"><span>[type_of_accident]</span></p>
+            </div>
+
+            <!-- Conditional: minor accident -->
+            <div class="section">
+                <h3 style="margin: 0 0 10px 0;">Details – Leichte Verletzung</h3>
+
+                <p class="field" data-label="Datum"><span>[date]</span></p>
+                <p class="field" data-label="Uhrzeit"><span>[time]</span></p>
+                <p class="field" data-label="Name des Verletzten"><span>[injured_name]</span></p>
+                <p class="field" data-label="Telefonnummer"><span>[injured_mobile]</span></p>
+                <p class="field" data-label="Art der Verletzung"><span>[injury]</span></p>
+                <p class="field" data-label="Erste Hilfe Leistung"><span>[first_aid_service]</span></p>
+                <p class="field" data-label="Ersthelfer"><span>[first_aid_name]</span></p>
+            </div>
+
+            <!-- Conditional: First aid accident -->
+            <div class="section">
+                <h3 style="margin: 0 0 10px 0;">Details – Erste Hilfe</h3>
+
+                <p class="field" data-label="Datum"><span>[date]</span></p>
+                <p class="field" data-label="Uhrzeit"><span>[time]</span></p>
+                <p class="field" data-label="Name des Verletzten"><span>[injured_name]</span></p>
+                <p class="field" data-label="Telefonnummer"><span>[injured_mobile]</span></p>
+
+                <!-- Address -->
+                <p class="field" data-label="Straße und Hausnummer"><span>[injured_address_street]</span></p>
+                <p class="field" data-label="PLZ"><span>[injured_address_zip]</span></p>
+                <p class="field" data-label="Stadt"><span>[injured_address_city]</span></p>
+
+                <p class="field" data-label="Art der Verletzung"><span>[injury]</span></p>
+                <p class="field" data-label="Erste Hilfe Maßnahme"><span>[first_aid_service]</span></p>
+                <p class="field" data-label="Unfallhergang"><span>[accident_sequence]</span></p>
+                <p class="field" data-label="Zeugen"><span>[witnesses]</span></p>
+                <p class="field" data-label="Kontakt Zeugen"><span>[witnesses_contact]</span></p>
+                <p class="field" data-label="Weiterbehandlung empfohlen"><span>[further_treatment_recommended]</span></p>
+                <p class="field" data-label="Rettungsdienst verständigt"><span>[paramedics_called]</span></p>
+                <p class="field" data-label="Rettungsdienst verweigert"><span>[paramedics_denied]</span></p>
+                <p class="field" data-label="Signatur"><span>[signature]</span></p>
+            </div>
+
+            <!-- Conditional: disruption / work accident -->
+            <div class="section">
+                <h3 style="margin: 0 0 10px 0;">Beschreibung</h3>
+                <p class="field" data-label="Beschreibung"><span>[description]</span></p>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p style="margin: 0 0 12px 0;">© 2025 ManagrSphere. Alle Rechte vorbehalten.</p>
+            <p style="margin: 0 0 12px 0;">
+                ManagrSphere UG (haftungsbeschränkt)<br />
+                Am Weiheracker 58, 93073 Neutraubling
+            </p>
+            <p style="margin: 0;">
+                <a href="https://managrsphere.com/impressum">Impressum</a> |
+                <a href="https://managrsphere.com/datenschutz">Datenschutz</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

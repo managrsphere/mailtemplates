@@ -11,6 +11,7 @@
     "pm_newaccount": "pm_newaccount.html",
     "pm_newclient": "pm_newclient.html",
     "pm_passwordrecovery": "pm_passwordrecovery.html",
+    "pm_report": "pm_report.html",
     "pm_error": "pm_error.html",
     "fa_2fa": "fa_twofactor.html",
     "fa_newaccount": "fa_newaccount.html",

@@ -48,6 +48,7 @@
         }
         .field:empty { display: none; }
         .field span:empty { display: none; }
+        .field:has(> span[data-placeholder]) { display: none; }
 
         .footer {
             padding: 20px;
@@ -78,51 +79,51 @@
 
             <!-- General fields -->
             <div class="section">
-                <p class="field" data-label="Datum"><span>[date]</span></p>
-                <p class="field" data-label="Uhrzeit"><span>[time]</span></p>
-                <p class="field" data-label="Bad"><span>[department]</span></p>
-                <p class="field" data-label="Art"><span>[type]</span></p>
-                <p class="field" data-label="Typ der Verletzung"><span>[type_of_accident]</span></p>
+                <p class="field" data-label="Datum"><span data-placeholder>[date]</span></p>
+                <p class="field" data-label="Uhrzeit"><span data-placeholder>[time]</span></p>
+                <p class="field" data-label="Bad"><span data-placeholder>[department]</span></p>
+                <p class="field" data-label="Art"><span data-placeholder>[type]</span></p>
+                <p class="field" data-label="Typ der Verletzung"><span data-placeholder>[type_of_accident]</span></p>
             </div>
 
             <!-- Conditional: minor accident -->
             <div class="section">
                 <h3 style="margin: 0 0 10px 0;">Details – Leichte Verletzung</h3>
 
-                <p class="field" data-label="Name des Verletzten"><span>[injured_name]</span></p>
-                <p class="field" data-label="Telefonnummer"><span>[injured_mobile]</span></p>
-                <p class="field" data-label="Art der Verletzung"><span>[injury]</span></p>
-                <p class="field" data-label="Erste Hilfe Leistung"><span>[first_aid_service]</span></p>
-                <p class="field" data-label="Ersthelfer"><span>[first_aid_name]</span></p>
+                <p class="field" data-label="Name des Verletzten"><span data-placeholder>[injured_name]</span></p>
+                <p class="field" data-label="Telefonnummer"><span data-placeholder>[injured_mobile]</span></p>
+                <p class="field" data-label="Art der Verletzung"><span data-placeholder>[injury]</span></p>
+                <p class="field" data-label="Erste Hilfe Leistung"><span data-placeholder>[first_aid_service]</span></p>
+                <p class="field" data-label="Ersthelfer"><span data-placeholder>[first_aid_name]</span></p>
             </div>
 
             <!-- Conditional: First aid accident -->
             <div class="section">
                 <h3 style="margin: 0 0 10px 0;">Details – Erste Hilfe</h3>
 
-                <p class="field" data-label="Name des Verletzten"><span>[injured_name]</span></p>
-                <p class="field" data-label="Telefonnummer"><span>[injured_mobile]</span></p>
+                <p class="field" data-label="Name des Verletzten"><span data-placeholder>[injured_name]</span></p>
+                <p class="field" data-label="Telefonnummer"><span data-placeholder>[injured_mobile]</span></p>
 
                 <!-- Address -->
-                <p class="field" data-label="Straße und Hausnummer"><span>[injured_address_street]</span></p>
-                <p class="field" data-label="PLZ"><span>[injured_address_zip]</span></p>
-                <p class="field" data-label="Stadt"><span>[injured_address_city]</span></p>
+                <p class="field" data-label="Straße und Hausnummer"><span data-placeholder>[injured_address_street]</span></p>
+                <p class="field" data-label="PLZ"><span data-placeholder>[injured_address_zip]</span></p>
+                <p class="field" data-label="Stadt"><span data-placeholder>[injured_address_city]</span></p>
 
-                <p class="field" data-label="Art der Verletzung"><span>[injury]</span></p>
-                <p class="field" data-label="Erste Hilfe Maßnahme"><span>[first_aid_service]</span></p>
-                <p class="field" data-label="Unfallhergang"><span>[accident_sequence]</span></p>
-                <p class="field" data-label="Zeugen"><span>[witnesses]</span></p>
-                <p class="field" data-label="Kontakt Zeugen"><span>[witnesses_contact]</span></p>
-                <p class="field" data-label="Weiterbehandlung empfohlen"><span>[further_treatment_recommended]</span></p>
-                <p class="field" data-label="Rettungsdienst verständigt"><span>[paramedics_called]</span></p>
-                <p class="field" data-label="Rettungsdienst verweigert"><span>[paramedics_denied]</span></p>
-                <p class="field" data-label="Signatur"><span>[signature]</span></p>
+                <p class="field" data-label="Art der Verletzung"><span data-placeholder>[injury]</span></p>
+                <p class="field" data-label="Erste Hilfe Maßnahme"><span data-placeholder>[first_aid_service]</span></p>
+                <p class="field" data-label="Unfallhergang"><span data-placeholder>[accident_sequence]</span></p>
+                <p class="field" data-label="Zeugen"><span data-placeholder>[witnesses]</span></p>
+                <p class="field" data-label="Kontakt Zeugen"><span data-placeholder>[witnesses_contact]</span></p>
+                <p class="field" data-label="Weiterbehandlung empfohlen"><span data-placeholder>[further_treatment_recommended]</span></p>
+                <p class="field" data-label="Rettungsdienst verständigt"><span data-placeholder>[paramedics_called]</span></p>
+                <p class="field" data-label="Rettungsdienst verweigert"><span data-placeholder>[paramedics_denied]</span></p>
+                <p class="field" data-label="Signatur"><span data-placeholder>[signature]</span></p>
             </div>
 
             <!-- Conditional: disruption / work accident -->
             <div class="section">
                 <h3 style="margin: 0 0 10px 0;">Beschreibung</h3>
-                <p class="field" data-label="Beschreibung"><span>[description]</span></p>
+                <p class="field" data-label="Beschreibung"><span data-placeholder>[description]</span></p>
             </div>
 
         </div>

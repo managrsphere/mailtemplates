@@ -47,8 +47,11 @@
             font-weight: 600;
         }
         .field:empty { display: none; }
-        .field span:empty { display: none; }
-        .field:has(> span[data-placeholder]) { display: none; }
+        .field:has(> span:empty) { display: none; }
+
+        .section:not(:has(.field > span:not(:empty))) {
+            display: none;
+        }
 
         .footer {
             padding: 20px;
